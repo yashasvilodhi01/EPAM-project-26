@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Bank - Customer Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>🏦 AAPNI SAVING BANK </h1>
+        <p>Your Trusted Banking Partner</p>
+    </header>
+
+    <section class="profile">
+
+        <h2>Customer Details </h2>
+
+        <div class="details">
+            <p><strong>Name :</strong> Yashasvi Lodhi</p>
+            <p><strong>Account No :</strong> 2026102458</p>
+            <p><strong>Account Type :</strong> Savings</p>
+            <p><strong>Balance :</strong>
+                ₹<span id="balance">10000</span>
+            </p>
+        </div>
+
+    </section>
+
+    <section class="transaction">
+
+        <h2>Bank Services</h2>
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Enter Amount">
+
+        <div class="btn-group">
+
+            <button onclick="depositMoney()">
+                Deposit
+            </button>
+
+            <button onclick="withdrawMoney()">
+                Withdraw
+            </button>
+
+            <button onclick="showBalance()">
+                Check Balance
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="history">
+
+        <h2>Transaction History</h2>
+
+        <ul id="historyList">
+
+        </ul>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
